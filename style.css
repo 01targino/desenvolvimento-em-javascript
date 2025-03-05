@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Montserrat;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.link-sao-paulo {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.link-sao-paulo:hover {
+    color: red;
+}
+
+.titulo-tabela {
+    text-align: center;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+th, td{
+    border: 1px solid white;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    padding: 15px;
+    text-align: center;
+}
+
+td a {
+    text-decoration: none;
+}
+
+img {
+    width: 30px;
+}
+
+.escudo {
+    transition: transform 0.3s ease-in-out;
+}
+
+.escudo:hover {
+    transform: scale(1.2);
+}
+
+
+.tabela-primeiro-lugar {
+    background-color: rgba(7, 173, 29, 0.364);
+}
