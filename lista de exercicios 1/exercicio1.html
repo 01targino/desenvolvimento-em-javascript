@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de exercícios</title>
+    <title>Lista de Exercícios</title>
     <link rel="shortcut icon" href="imagens/Brasao_do_Sao_Paulo_Futebol_Clube.svg.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <h1>Texto H1</h1>
@@ -49,7 +50,7 @@
 
     <div class="container">
 
-    <table>
+        <table>
             <tr>
                 <th>Escudo</th>
                 <th>Posição</th>
@@ -59,7 +60,7 @@
                 <th>Qtd. vitórias</th>
                 <th>Qtd. derrotas</th>
             </tr>
-            <tr class="tabela-primeiro-lugar">
+            <tr id="botafogo" onmouseover="mudarCorLinha(this)" onmouseout="restaurarCorLinha(this)">
                 <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Escudo_Botafogo.png/800px-Escudo_Botafogo.png" alt="" class="escudo"></td>
                 <td>1º</td>
                 <td><a href="https://botafogo.com.br/">Botafogo</a></td>
@@ -68,7 +69,7 @@
                 <td>9</td>
                 <td>1</td>
             </tr>
-            <tr>
+            <tr id="palmeiras" onmouseover="mudarCorLinha(this)" onmouseout="restaurarCorLinha(this)">
                 <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Palmeiras_logo.svg/1200px-Palmeiras_logo.svg.png" alt="" class="escudo"></td>
                 <td>2º</td>
                 <td><a href="https://www.palmeiras.com.br/">Palmeiras</a></td>
@@ -77,7 +78,7 @@
                 <td>8</td>
                 <td>2</td>
             </tr>
-            <tr>
+            <tr id="flamengo" onmouseover="mudarCorLinha(this)" onmouseout="restaurarCorLinha(this)">
                 <td><img src="https://logopng.com.br/logos/flamengo-15.png" alt="" class="escudo"></td>
                 <td>3º</td>
                 <td><a href="https://www.flamengo.com.br/">Flamengo</a></td>
@@ -86,10 +87,14 @@
                 <td>7</td>
                 <td>3</td>
             </tr>
-    
-    </tbody>
-    </table>
+        </table>
+    </div>
 
-</div>
+    <div class="buttons">
+
+        <button onclick="alterarCorLinha()">Alterar cor da linha do Botafogo</button>
+        <button onclick="alterarCorLinhaPorId('palmeiras')">Alterar cor da linha do Palmeiras</button>
+
+        </div>
 </body>
 </html>
