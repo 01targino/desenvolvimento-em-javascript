@@ -36,7 +36,7 @@ table {
     align-items: center;
 }
 
-th, td{
+th, td {
     border: 1px solid white;
     align-items: center;
     width: 150px;
@@ -61,7 +61,24 @@ img {
     transform: scale(1.2);
 }
 
-
 .tabela-primeiro-lugar {
-    background-color: rgba(7, 173, 29, 0.364);
+    background-color: rgba(7, 173, 29, 1);
+    color: white;  
+}
+
+.buttons {
+    display:flex;
+    color: white;
+    justify-content: center;
+    margin: 30px 0px 0px 0px;
+}
+
+.buttons button {
+    background-color: red;
+    width: 10%;
+    border-radius: 15px;
+    border: none;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 7px;
 }
